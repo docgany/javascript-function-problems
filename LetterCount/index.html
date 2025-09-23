@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Letter Count</title>
+        <link href="stylesheet.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="card major">
+            <div class="card one move">
+                <form id="form-control">
+                    <label for="words-input">Enter the input words:</label><br>
+                    <input type="text" id="words-el" name="words-el"><br>
+                    <label>Enter the letter to be counted:</label><br>
+                    <input type="text" id="letter-el" name="letter-el"><br>
+                    <div>
+                        <p id="result">The number of occurrences of the letter are:</p>
+                    </div>
+                    <input type="submit" id="submit-btn" value="SUBMIT">
+                </form>
+            </div>
+
+            <div class="card two move">
+                <div class="box1">
+                    <h2>Function Problems 3</h2>
+                    <p>
+                        Aim is to code a function that takes in 2 arguments which are :
+                    </p>
+                    <ul>
+                        <li>A String</li>
+                        <li>A Letter</li>
+                    </ul>
+                    <p>and count the number of occurrences of the specified letter within the string.</p>
+                </div>
+            </div>
+
+            <div class="card three move">
+                <div>
+                    <h2>Function Process</h2>
+                    <p>
+                        Using DOM manipulation, the inputs are stored as variables which can be accessed when our
+                        defined function is triggered by a form submit event that performs the operation and returns the
+                        value as a template literal in our HTML.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

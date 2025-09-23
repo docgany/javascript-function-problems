@@ -1,0 +1,244 @@
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, #83A4D4, #B6FBFF);
+    overflow: hidden;
+}
+
+header {
+    text-align: center;
+    margin: 20px;
+    padding: 10px 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-weight: 500;
+    padding: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.intro p {
+    position: absolute;
+    left: 10px;
+    top: 45px;
+}
+
+header h1 {
+    text-shadow: 2px 2px 6px #098c93, 3px 3px 7px gray, 0 3px 6px rgb(193, 39, 46);
+    text-decoration: underline;
+    font-size: 40px;
+    transition: transform 4s;
+    transition-timing-function: linear;
+}
+
+header h1:hover {
+    transform: scaleX(1.5)
+}
+
+.container {
+    background-color: white;
+    margin: 5px auto;
+    padding: 40px 20px;
+    width: 40%;
+    height: 55%;
+    border: none;
+    border-radius: 30px;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    transform: skewX(-10deg)
+}
+
+input[type="submit"] {
+    padding: 20px;
+    background-color: rgb(241, 110, 110);
+    border: none;
+    border-radius: 20px;
+    color: white;
+    text-shadow: 2px 4px 6px #000000;
+    text-transform: uppercase;
+    margin-left: 150px;
+    text-align: center;
+    width: 200px;
+    cursor: pointer;
+    font-size: large;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+div #arr-words {
+    border-radius: 15px;
+    padding: 20px;
+    margin-left: 45px;
+    width: 350px;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    border: none;
+    height: 20px;
+    transition: all 3s ease;
+}
+
+input[type="text"]:focus {
+    background-color: rgb(237, 244, 249);
+    border: none;
+}
+
+div #word {
+    width: 350px;
+    border-radius: 15px;
+    padding: 20px;
+    height: 20px;
+    margin: 3px auto;
+    border: none;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    transition: all 3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(95, 189, 235);
+    color: black;
+    font-size: 25px;
+}
+
+input::placeholder {
+    font-size: large;
+    text-transform: capitalize;
+}
+
+div.intro {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    position: absolute;
+    left: 16px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    text-align: center;
+    box-sizing: border-box;
+    animation-name: colorChange;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 5s;
+}
+
+div.spinner {
+    position: absolute;
+    top: 30%;
+    left: 78%;
+    text-align: center;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    box-sizing: border-box;
+    animation-name: colorChange;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 5s;
+}
+
+.spinner p {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+}
+
+@keyframes colorChange {
+    0% {
+        background-color: rgba(132, 170, 199, 1);
+    }
+
+    25% {
+        background-color: rgba(173, 231, 245, 0.937);
+    }
+
+    50% {
+        background-color: rgba(132, 170, 200, 0.7);
+    }
+
+    75% {
+        background-color: rgba(173, 231, 250, 0.5);
+    }
+
+    100% {
+        background-color: rgba(135, 158, 199, 0.3);
+    }
+}
+
+footer {
+    width: 80%;
+    margin: 15px auto 5px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+footer>p {
+    font-style: italic;
+    color: rgb(107, 105, 105);
+}
+
+@media only screen and (max-width: 1024px) {
+    body {
+        overflow: visible;
+        background: linear-gradient(to bottom, #83A4D4, #B6FBFF);
+        margin: 10px;
+        padding: 10px;
+        display: block;
+
+    }
+
+    div.intro {
+        position: relative;
+        margin: 10px;
+        display: inline-block;
+        text-align: center;
+        
+    }
+
+    div.spinner {
+        display: inline-block;
+        margin: 10px 50px;
+        text-align: center;
+        position: relative;
+        top: 0%;
+        left: -0%
+    }
+
+    .intro > p, .spinner > p {
+        position: absolute;
+        top: 50px;
+        left: 0;
+        text-align: center;
+    }
+
+    .container {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    #form1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    #form > div {
+        max-width: 70%;
+        text-align: center;
+        margin: 5px auto;
+    }
+
+    #submit-btn {
+        margin: 5px auto 15px;
+    }
+
+    footer {
+        margin-bottom: 15px;
+        padding-bottom: 10px;
+    }
+
+}
