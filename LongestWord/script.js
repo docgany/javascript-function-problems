@@ -37,8 +37,8 @@ form.addEventListener("submit", (e) => {
     if (userInput.value == "") {
         output.innerHTML = "Ensure you input a value in the form";
     } else {
-        const Words = userInput.value.split(" ");
-        Words.forEach((word) => {
+        const words = userInput.value.split(" ");
+        words.forEach((word) => {
             if (word.length > longest.length) {
                 longest = word;
             }
