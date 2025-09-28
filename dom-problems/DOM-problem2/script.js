@@ -8,10 +8,12 @@ When you click on it, display it on the webpage by adding it as the text for ano
 const button = document.getElementById("btn");
 let para = document.getElementById("result");
 let link = document.getElementById("my-link");
+const div = document.getElementById("container");
 
 /*add an event Listener to the button that triggers an event handler on click event, then define a function within which we use the `element.getAttibute() method to get its attribute value. Finally this is displayed in our empty paragraph with a string template string using the property `element.getAttribute();*/
 
 button.addEventListener("click", function () {
     let output = link.getAttribute("href");
     para.textContent = `The value of HREF attribute is ${output}.`;
+    para.style.border = "2px solid ";
 });

@@ -33,7 +33,7 @@ p {
     margin-bottom: 20px;
 }
 
-p:isnotfirst-child {
+p:first-child {
     color: rgb(127, 69, 27);
 }
 
@@ -47,6 +47,9 @@ h1 {
 #result {
     font-style: italic;
     text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 30px;
 }
 
 p>a {
