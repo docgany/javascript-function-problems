@@ -31,14 +31,14 @@ let a = "This is a javascript function problem";
 let b = "i";
 
 
-function letterCount(string, letter) {
+function letterCount(str, letter) {
     let counter = 0;
-    for (let i = 0; i < string.length; i++) {
-        if (string[i] === letter) {
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] === letter) {
             counter++;
         }
     }
-    return `the string contains ${counter} occurrences of ${letter}`;
+    return counter;
 }
 console.log(letterCount(a, b));
 

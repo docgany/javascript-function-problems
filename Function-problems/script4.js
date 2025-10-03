@@ -35,17 +35,17 @@ Step 9: We invoke or call our function to action. We can also log it to
 let input = "Our family is going away on vacation this Summer";
 
 
-function numberOfVowels(string) {
+function numberOfVowels(str) {
     const arrVowels = ["a", "e", "i", "o", "u"];
     let counter = 0;
-    const arrLetters = string.toLowerCase().split("");
+    const arrLetters = str.toLowerCase().split("");
     //return console.log(arrLetters);
     arrLetters.forEach((letter) => {
         if (arrVowels.includes(letter)) {
             counter++;
         }
     });
-    return ` The number of vowels in the inputted string are ${counter}`;
+    return counter;
 };
 
 numberOfVowels(input);

@@ -22,21 +22,15 @@
 function findMultiple() {
     let result = "";
     for (let num = 1; num <= 100; num++) {
-        if ((num % 3 === 0) & (num % 5 === 0)) {
-            result += "FizzBuzz";
-            console.log(result);
-        } else if (num % 3 === 0) {
+        if (num % 3 === 0) {
             result += "Fizz";
-            console.log(result);
-        } else if (num % 5 === 0) {
-            result += "Buzz";
-            console.log(result);
-        } else {
-            result += num;
-            console.log(result);
         }
+        if (num % 5 === 0) {
+            result += "Buzz";
+        }
+        console.log(result);
+        result = "";
     }
-    return result;
 }
 
 findMultiple();

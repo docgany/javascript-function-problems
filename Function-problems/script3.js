@@ -36,13 +36,12 @@ let c = "I have been struggling lately to make out time to finish my projects.";
 function longestWord(string) {
     const arrWords = string.split(" ");
     let longest = "";
-    //return console.log(arrWords);
     arrWords.forEach((item) => {
         if (item.length > longest.length) {
             longest = item;
         }
     });
-    return `The longest word in our string is ${longest}`;
+    return longest;
 }
 
 longestWord(c);
