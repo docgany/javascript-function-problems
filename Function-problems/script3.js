@@ -31,8 +31,7 @@ Step 9: We invoke our function to call it into action and log to console
 
 
         
-let string =
-    "I have been struggling lately to make out time to finish my projects.";
+let c = "I have been struggling lately to make out time to finish my projects.";
 
 function longestWord(string) {
     const arrWords = string.split(" ");
@@ -46,6 +45,6 @@ function longestWord(string) {
     return `The longest word in our string is ${longest}`;
 }
 
-longestWord(string);
+longestWord(c);
 
-console.log(longestWord(string));
+console.log(longestWord(c));

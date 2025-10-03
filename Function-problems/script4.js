@@ -2,7 +2,7 @@
 
 Step 1: declare and initialise our parameter, string with a hard coded value.
 
-Step 2: Using keyword `funnction`, define a function called numberOfVowels()
+Step 2: Using keyword `function`, define a function called numberOfVowels()
         which takes the declared variable string as an argument.
     
 Step 3: declare and initialise a variable, ` arrVowels` which is an array of 
@@ -32,7 +32,7 @@ Step 9: We invoke or call our function to action. We can also log it to
 
 
 
-let string = "Our family is going away on vacation this Summer";
+let input = "Our family is going away on vacation this Summer";
 
 
 function numberOfVowels(string) {
@@ -48,6 +48,6 @@ function numberOfVowels(string) {
     return ` The number of vowels in the inputted string are ${counter}`;
 };
 
-numberOfVowels(string);
+numberOfVowels(input);
 
-console.log(numberOfVowels(string));
+console.log(numberOfVowels(input));

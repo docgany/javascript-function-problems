@@ -2,7 +2,7 @@
     letter and the function will count the number of occurrences of the specified letter within the string.
 
     Step 1: We will declare our variables(parameters) and initialise with
-            hard-coded values, as well as declare and initialise a counter with value of 0 to keep counts i each iteration.
+            hard-coded values outside the function code as our arguments, as well as, declare and initialise a counter with value of 0 to keep counts i each iteration within our function.
 
     Step 2: define our function name `letterCount` using the function keyword
            followed by paratheses, containing string and letter as our parameters.
@@ -27,11 +27,12 @@
     Step 7: Invoke or function and see if working well*/
 
 
-let string = "This is a javascript function problem";
-let letter = "i";
-let counter = 0;
+let a = "This is a javascript function problem";
+let b = "i";
+
 
 function letterCount(string, letter) {
+    let counter = 0;
     for (let i = 0; i < string.length; i++) {
         if (string[i] === letter) {
             counter++;
@@ -39,7 +40,7 @@ function letterCount(string, letter) {
     }
     return `the string contains ${counter} occurrences of ${letter}`;
 }
-console.log(letterCount(string, letter));
+console.log(letterCount(a, b));
 
-letterCount(string, letter);
+letterCount(a, b);
     

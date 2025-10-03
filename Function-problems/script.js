@@ -20,17 +20,23 @@
 
 
 function findMultiple() {
+    let result = "";
     for (let num = 1; num <= 100; num++) {
         if ((num % 3 === 0) & (num % 5 === 0)) {
-            console.log("FizzBuzz");
+            result += "FizzBuzz";
+            console.log(result);
         } else if (num % 3 === 0) {
-            console.log("Fizz");
+            result += "Fizz";
+            console.log(result);
         } else if (num % 5 === 0) {
-            console.log("Buzz");
+            result += "Buzz";
+            console.log(result);
         } else {
-            console.log("Not a multiple of 3 and/or 5");
+            result += num;
+            console.log(result);
         }
     }
+    return result;
 }
 
 findMultiple();
