@@ -26,7 +26,7 @@
 function changeBackgroundColor() {
     let para = document.getElementById("result");
     const colors = ["white", "blue", "pink", "yellow-green", "red", "coral"];
-    const randomColor = Math.floor(Math.random() * 6)
+    const randomColor = Math.floor(Math.random() * colors.length)
     for (let i = 0; i < colors.length; i++) {
         colors[randomColor];
     } 
