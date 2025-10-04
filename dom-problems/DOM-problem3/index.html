@@ -1,30 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOM PROBLEM 3</title>
-    <link href="stylesheet.css" rel="stylesheet">
-</head>
-<body>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Projects</a>
-                <ul class="dropdown">
-                    <li><a href="#">Python Data Analysis</a></li>
-                    <li><a href="#">Javascript DOM</a></li>
-                    <li><a href="#">Machine Learning</a></li>
-                </ul>
-            </li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
 
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DOM PROBLEMS 3</title>
+        <link href="stylesheet.css" rel="stylesheet">
+    </head>
 
+    <body>
+        <h1> DOM PROBLEM 3</h1>
+        <p>
+            Select from the options below:
+        </p>
+        <select id="mySelect">
+            <option value=Javascript>Javascript</option>
+            <option value="Python">Python</option>
+            <option value="HTML/CSS">HTML/CSS</option>
+        </select><br><br>
+        <button id="btn">Click Me</button>
+        <p>
+            When the event handler is triggered, it also displays the number of option elements found in a drop-down
+            list as shown below and also list out all the items in our drop-down list as a string in another paragraph.
+        </p>
+        <p id="item-length"></p>
+        <p id="items">The items in the drop-down list are as follows;</p>
+        <p>
+            When you select a new drop-down item, a function which is same event handler is triggered by the 'onchange'
+            event
+            added to the selected element that will then output the value of the selected item as seen below;
+        </p>
+        <p id="selectedItem"></p>
 
+        <script src="script.js"></script>
+    </body>
 
-    <script src="script.js"></script>
-</body>
 </html>
