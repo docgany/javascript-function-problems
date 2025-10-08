@@ -6,8 +6,8 @@ Stage3: Using the 'change'event' event handler triggered when we select another 
 const selectEl = document.getElementById("mySelect");
 
 selectEl.addEventListener('change', () => {
-    let y = selectEl.value;
-    document.getElementById("selectedItem").textContent = `You selected : ${y}`;
+    let selectInputVal = selectEl.value;
+    document.getElementById("selectedItem").textContent = `You selected : ${selectInputVal}`;
 
     let txt = "";
     for (let i = 0; i < selectEl.length; i++) {
