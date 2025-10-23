@@ -23,12 +23,12 @@ const professionals = {
 
 function getLength(obj) {
     let result = Object.keys(obj).length;
-    return `There are ${result} items in the object`;
+    return result;
 }
 
 getLength(professionals);
 
-console.log(getLength(professionals));
+console.log("There are " + getLength(professionals) + " items in this object.");
 
 //Method 2 
 const students = {
@@ -39,12 +39,12 @@ const students = {
 
 function findLength(obj2) {
     let result = Object.values(obj2).length;
-    return `We have ${result} in our object.`;
+    return result;
 }
 
 findLength(students);
 
-console.log(findLength(students));
+console.log("We have " + findLength(students) + " items in our object.");
 
 
 //Method 3 
@@ -56,12 +56,12 @@ const family = {
 
 const numberOfItems = function (obj3) {
     let result = Object.entries(obj3).length;
-    return `This object has only ${result} items in it.`;
+    return result;
 };
 
 numberOfItems(family);
 
-console.log(numberOfItems(family));
+console.log("This object has only " + numberOfItems(family) + " items in it.");
 
 
 // Method 4 
@@ -76,9 +76,9 @@ function itemCount(obj4) {
     for (let key in obj4) {
         if (obj4.hasOwnProperty(key)) counter++;
     }
-    return `${counter} items found here.`;
+    return counter;
 }
 
 itemCount(planner);
 
-console.log(itemCount(planner));
+console.log(itemCount(planner) + " items found here.");
